@@ -1,4 +1,10 @@
 Getmuzack::Application.routes.draw do
+  get "subscription/new"
+
+  get "subscription/create"
+
+  root to: "subscription#new"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
