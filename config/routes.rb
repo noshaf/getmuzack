@@ -2,7 +2,7 @@ Getmuzack::Application.routes.draw do
 
   resources :subscriptions
 
-  root to: "subscription#new"
+  root to: "subscriptions#new"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -7,7 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	
+
+	<%= content_tag :p, flash[:sucess], :class => "flash notice" if flash[:success] %>
+	<%= content_tag :p, flash[:notice], :class => "flash notice" if flash[:notice] %>
+	<%= content_tag :p, flash[:alert], :class => "flash alert" if flash[:alert] %>
+
 	<%= yield %>
 
 </body>
