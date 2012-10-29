@@ -1,7 +1,6 @@
 Getmuzack::Application.routes.draw do
-  get "subscription/new"
 
-  get "subscription/create"
+  resources :subscriptions
 
   root to: "subscription#new"
 
