@@ -6,4 +6,11 @@ class SubscriptionMailer < ActionMailer::Base
     mail(:to => subscription.email, :subject => "Welcome to Get Muzack!")
   end
 
+  def weekly_email
+  	@subscriptions = Subscripions.all
+  	@subscriptions.each do |s|
+  		mail(:to => s.email, :subject => "Get Muzack Weekly Mail")
+  	end
+  end
+
 end
