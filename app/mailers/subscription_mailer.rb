@@ -1,5 +1,5 @@
 class SubscriptionMailer < ActionMailer::Base
-  default from: "Welcome@getMuzack.com"
+  default from: "Get Muzack"
 
   def welcome_email(subscription)
     @subscription = subscription
