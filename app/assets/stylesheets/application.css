@@ -921,6 +921,17 @@ html {
 	width: 250px;
 }
 
+#like {
+	position: fixed; 
+	top: 25%; 
+	left: 38%;
+	border: 2px solid;
+	border-radius: 15px;
+	border-color: #d9230f;
+	-moz-border-radius:25px;
+	width: 250px;
+}
+
 .form {
 	text-align: center;
 }

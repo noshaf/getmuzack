@@ -8,7 +8,7 @@ task :send_weekly_test_email => :environment do
 end
 
 task :send_welcome_test_email => :environment do
-  noah = Subscription.where(:email => "noshaf@gmail.com")
+  noah = Subscription.where(:email => "noshaf@gmail.com").first
   SubscriptionMailer.welcome_email(noah).deliver
 end
 

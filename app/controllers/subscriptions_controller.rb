@@ -10,9 +10,16 @@ class SubscriptionsController < ApplicationController
 
   		SubscriptionMailer.welcome_email(@subscription).deliver
 
-  		redirect_to new_subscription_path, :alert => "Thanks for signing up!"
+  		redirect_to subscription_path(@subscription), :alert => "Thanks for signing up!"
   	else
   		redirect_to new_subscription_path, :alert => "Invalid email"
   	end
+  end
+
+  def show
+  end
+
+  def index
+
   end
 end
