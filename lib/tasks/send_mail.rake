@@ -1,10 +1,15 @@
-task :send_mail => :environment do
+task :send_weekly_email => :environment do
 	SubscriptionMailer.weekly_email(Subscription.all).deliver
 end
 
-task :send_test_mail => :environment do
+task :send_weekly_test_email => :environment do
   noah = Subscription.where(:email => "noshaf@gmail.com")
   SubscriptionMailer.weekly_email(noah).deliver
+end
+
+task :send_welcome_test_email => :environment do
+  noah = Subscription.where(:email => "noshaf@gmail.com")
+  SubscriptionMailer.welcome_email(noah).deliver
 end
 
 task :get_emails => :environment do
