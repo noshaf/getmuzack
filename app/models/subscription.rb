@@ -7,7 +7,7 @@ class Subscription < ActiveRecord::Base
 	private
 
 	def downcase_email
-  	self.email = self.email.downcase if self.email.present?
+  		self.email = self.email.downcase if self.email.present?
 	end
 
 end
