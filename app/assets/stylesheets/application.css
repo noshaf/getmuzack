@@ -905,6 +905,10 @@ html {
 	background-size: cover;
 }
 
+.well{
+  border-color: #66CCFF;
+}
+
 .form{
 	text-align: left;
 	line-height:300%
@@ -932,9 +936,10 @@ html {
 	left: 38%;
 	border: 2px solid;
 	border-radius: 15px;
-	border-color: #d9230f;
 	-moz-border-radius:25px;
 	width: 250px;
+  border-color: #66CCFF;
+
 }
 
 .form {
