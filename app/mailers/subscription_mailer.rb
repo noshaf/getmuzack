@@ -6,11 +6,8 @@ class SubscriptionMailer < ActionMailer::Base
     mail(:to => subscription.email, :subject => "Welcome to Got Concert!")
   end
 
-  def weekly_email(subscriptions)
-  	@subscriptions = subscriptions
-  	@subscriptions.each do |s|
-  		mail(:to => s.email, :subject => "Got Concert Weekly Mail")
-  	end
+  def weekly_email(subscription)
+		mail(:to => subscription.email, :subject => "Got Concert Weekly Mail")
   end
 
 end

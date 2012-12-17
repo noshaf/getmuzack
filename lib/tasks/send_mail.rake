@@ -1,5 +1,7 @@
 task :send_weekly_email => :environment do
-	SubscriptionMailer.weekly_email(Subscription.all).deliver
+	Subscription.all.each do |s|
+		SubscriptionMailer.weekly_email(s).deliver
+	end
 end
 
 task :send_weekly_test_email => :environment do
