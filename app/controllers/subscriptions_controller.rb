@@ -20,7 +20,5 @@ class SubscriptionsController < ApplicationController
   end
 
   def index
-    visit = Visit.new
-    visit.save
   end
 end
