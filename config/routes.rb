@@ -1,7 +1,5 @@
 Getmuzack::Application.routes.draw do
 
-  get "featured/index"
-
   resources :subscriptions
 
   root to: "subscriptions#new"
