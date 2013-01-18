@@ -896,3 +896,46 @@ i[class^="icon-"]{opacity:0.5;vertical-align:-2px;}
 .show{display:block;}
 .invisible{visibility:hidden;}
 .affix{position:fixed;}
+
+.header {
+  position: fixed;
+  bottom:5%;
+  width:100%;
+  opacity:.8;
+  background-color: black;
+  height:50px;
+}
+
+.item {
+  color: white;
+  width: 200px;
+  text-align: center;
+  margin-left: 50px;
+  padding-top: 7px;
+  font-weight: bold;
+  font-size: 120%;
+  border-left: solid white;
+  border-right: solid white;
+  display: inline-block;
+  height: 43px;
+}
+
+.item a{
+  color:#66CCFF;
+}
+
+.item a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.title {  
+  position: fixed;
+  bottom: 7%;
+  color:white;
+  font-weight: bold;
+  font-size: 200%;
+  opacity:.7;
+  right:5%;
+  z-index: 5;
+}

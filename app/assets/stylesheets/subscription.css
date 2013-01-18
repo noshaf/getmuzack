@@ -22,7 +22,7 @@ html {
 
 #subscribe {
   position: fixed; 
-  top: 20%; 
+  top: 14%; 
   right: 50%;
   margin-right: -250px;
   border: 2px solid;
@@ -57,7 +57,7 @@ html {
   text-align: center;
   font-size: 250%;
   position: fixed; 
-  top: 22%; 
+  top: 17%; 
   right: 52.5%;
   margin-right: -250px;
   color: #66CCFF;

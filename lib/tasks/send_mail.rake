@@ -21,5 +21,5 @@ task :get_emails => :environment do
 end
 
 task :email_count => :environment do
-  Subscription.all.count
+  puts Subscription.all.count
 end

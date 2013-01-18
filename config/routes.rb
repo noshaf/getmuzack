@@ -1,8 +1,12 @@
 Getmuzack::Application.routes.draw do
 
+  get "featured/index"
+
   resources :subscriptions
 
   root to: "subscriptions#new"
+
+  resources :featured
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
