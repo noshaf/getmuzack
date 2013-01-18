@@ -2,7 +2,6 @@ class SubscriptionMailer < ActionMailer::Base
   default from: "GotConcert@gotconcert.com"
 
   def welcome_email(subscription)
-    @subscription = subscription
     mail(:to => subscription.email, :subject => "Welcome to Got Concert!")
   end
 
