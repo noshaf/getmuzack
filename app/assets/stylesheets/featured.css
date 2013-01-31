@@ -1,0 +1,19 @@
+#about{
+  position: fixed; 
+  top: 10%; 
+  right: 50%;
+  margin-right: -375px;
+  border: 2px solid;
+  border-radius: 15px;
+  border-color: #66CCFF;
+  -moz-border-radius: 25px;
+  width: 500px;
+  padding-left: 125px;
+  padding-right: 125px;
+  z-index: 5;
+  font-family: arial;
+}
+
+h1, h3 {
+  font-family: arial;
+}

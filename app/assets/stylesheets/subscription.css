@@ -50,7 +50,7 @@ html {
 
 .form {
   text-align: center;
-  line-height:300%
+  line-height: 300%
 }
 
 #motto{
@@ -64,10 +64,6 @@ html {
   z-index: 6; 
   font-weight:bold;
   line-height: 110%;
-}
-
-.well{
-  border-color: #66CCFF;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
