@@ -12,5 +12,9 @@ class SubscriptionMailer < ActionMailer::Base
   def alert_email(subscription)
     mail(:to => subscription.email, :subject => "Early Bird Specials!")
   end
+  
+  def email(email)
+    mail(:to => email, :subject => "Selling your tickets")
+  end
 
 end

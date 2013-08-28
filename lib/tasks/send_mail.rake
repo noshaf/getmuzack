@@ -34,3 +34,7 @@ end
 task :email_count => :environment do
   puts Subscription.all.count
 end
+
+task :mail => :environment do
+  SubscriptionMailer.email("noshaf@gmail.com").deliver
+end
